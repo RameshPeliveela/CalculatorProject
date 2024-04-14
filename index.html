@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="Calculator">
+        <input type="text" id="display" readonly>
+
+        <div id="buttons-container">
+            <button class="buttons" onclick="show = ''; document.querySelector('#display').value=show">c</button>
+            <button class="buttons" onclick="show = show+'1'; document.querySelector('#display').value=show">1</button>
+            <button class="buttons" onclick="show = show+'2'; document.querySelector('#display').value=show">2</button>
+            <button class="buttons" onclick="show = show+'+'; document.querySelector('#display').value=show">+</button>
+            <button class="buttons" onclick="show = show+'3'; document.querySelector('#display').value=show">3</button>
+            <button class="buttons" onclick="show = show+'4'; document.querySelector('#display').value=show">4</button>
+            <button class="buttons" onclick="show = show+'-'; document.querySelector('#display').value=show">-</button>
+            <button class="buttons" onclick="show = show+'5'; document.querySelector('#display').value=show">5</button>
+            <button class="buttons" onclick="show = show+'6'; document.querySelector('#display').value=show">6</button>
+            <button class="buttons" onclick="show = show+'*'; document.querySelector('#display').value=show">*</button>
+            <button class="buttons" onclick="show = show+'7'; document.querySelector('#display').value=show">7</button>
+            <button class="buttons" onclick="show = show+'8'; document.querySelector('#display').value=show">8</button>
+            <button class="buttons" onclick="show = show+'/'; document.querySelector('#display').value=show">/</button>
+            <button class="buttons" onclick="show = eval(show); document.querySelector('#display').value=show">=</button>
+            <button class="buttons" onclick="show = show+'9'; document.querySelector('#display').value=show">9</button>
+            <button class="buttons" onclick="show = show+'0'; document.querySelector('#display').value=show">0</button>
+        </div>
+    </div>
+    <script>
+        let show = '';
+        document.querySelector('#display').value=show;
+    </script>
+</body>
+</html>
